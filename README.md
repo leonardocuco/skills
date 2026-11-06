@@ -51,27 +51,29 @@ A companion bundle that plans, sequences, and validates Algolia implementations 
 
 ```bash
 /plugin marketplace add algolia/skills
-/plugin install <skill>   # e.g. algolia-mcp, algolia-cli, algobot-cli, instantsearch, algolia-crawler, algolia-migration, algolia-quickstart, algolia-vercel
+/plugin install <skill>   # e.g. algolia-mcp, algolia-cli, algobot-cli, agent-studio-evaluations, instantsearch, algolia-crawler, algolia-migration, algolia-quickstart, algolia-vercel, algolia-implementation
 ```
 
 Or install directly:
 
 ```bash
-/plugin install <skill>@algolia-skills   # e.g. algolia-mcp, algolia-cli, algobot-cli, instantsearch, algolia-crawler, algolia-migration, algolia-quickstart, algolia-vercel
+/plugin install <skill>@algolia-skills   # e.g. algolia-mcp, algolia-cli, algobot-cli, agent-studio-evaluations, instantsearch, algolia-crawler, algolia-migration, algolia-quickstart, algolia-vercel, algolia-implementation
 ```
+
+> **Note:** the implementation suite skills (`algolia-audit`, `algolia-discovery-planning`, ...) are installed together via the `algolia-implementation` plugin.
 
 #### npx
 
 ```bash
 npx skills add https://github.com/algolia/skills            # all skills
-npx skills add algolia/skills --skill <skill>               # one skill, e.g. algolia-vercel
+npx skills add algolia/skills --skill <skill>               # one skill, e.g. algolia-mcp, algolia-cli, algobot-cli, agent-studio-evaluations, instantsearch, algolia-crawler, algolia-migration, algolia-quickstart, algolia-vercel
 ```
 
 #### Clone / Copy
 
 ```bash
 git clone https://github.com/algolia/skills.git
-cp -r skills/<skill> <skills-directory>   # e.g. algolia-mcp, algolia-cli, algobot-cli, instantsearch, algolia-crawler, algolia-migration, algolia-quickstart, algolia-vercel
+cp -r skills/<skill> <skills-directory>   # e.g. algolia-mcp, algolia-cli, algobot-cli, agent-studio-evaluations, instantsearch, algolia-crawler, algolia-migration, algolia-quickstart, algolia-vercel
 ```
 
 <details>
