@@ -26,11 +26,12 @@
 
 ### Implementation planning suite (`algolia-implementation`)
 
-A companion bundle that plans, sequences, and validates Algolia implementations end to end. It routes live operations to `algolia-cli` / `algolia-mcp` / `algobot-cli` and code-level UI work to `instantsearch`. Install as a bundle — `algolia-discovery-planning` is the entry point and loads the companion skills per phase.
+A companion bundle that plans, sequences, and validates Algolia implementations end to end. It routes live operations to `algolia-cli` / `algolia-mcp` / `algobot-cli` and code-level UI work to `instantsearch`. Install as a bundle — `algolia-discovery-planning` is the entry point for builds and `algolia-audit` is the entry point for reviewing existing implementations; both load the companion skills per phase.
 
 | Skill                          | Description                                                                    |
 | ------------------------------ | ------------------------------------------------------------------------------ |
 | `algolia-discovery-planning`   | Entry point: maps any request to lifecycle phases and loads companion skills   |
+| `algolia-audit`                | Entry point for auditing and health-checking an existing implementation        |
 | `algolia-search-implementation`| Execution checklist and readiness signposts for net-new builds                 |
 | `algolia-data-modeling`        | Record shape, variants, objectID, facets, and event-attribution readiness      |
 | `algolia-index-configuration`  | Relevance settings, ranking, synonyms, rules, replicas, rollback planning      |
