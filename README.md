@@ -43,6 +43,17 @@ A companion bundle that plans, sequences, and validates Algolia implementations 
 | `algolia-agent-studio`         | Agent Studio planning, readiness gates, guardrails, and launch validation      |
 | `algolia-release-qa`           | Launch QA with severity-led findings, event checks, and residual risk          |
 
+### ⌨️ Slash commands
+
+Ready-to-run workflows that drive the skills above — installed alongside them:
+
+| Command           | What it does                                                                                |
+| ----------------- | ------------------------------------------------------------------------------------------- |
+| `/mcp-connect`    | Detects your MCP client, wires in the Algolia MCP server, and runs the OAuth + first query |
+| `/cli-setup`      | Installs the Algolia CLI and configures a profile with your credentials                     |
+| `/audit-agent`    | Zero-cost static audit of an Agent Studio agent config — run it before any paid evaluation  |
+| `/improve-agent`  | Eval-driven tuning loop: evaluate on a safe clone, fix, re-evaluate, promote on your approval|
+
 ---
 
 ## 🚀 Installation
